@@ -1,4 +1,4 @@
-import { BOOK_URL } from '../data'
+import { BOOK_URL, heroHair } from '../data'
 
 export function Hero() {
   return (
@@ -6,7 +6,7 @@ export function Hero() {
       <div className="hero__stone" aria-hidden="true">
         <img
           className="hero__photo"
-          src="/images/hero-hair.jpg"
+          src={heroHair}
           alt=""
           width={1600}
           height={2000}

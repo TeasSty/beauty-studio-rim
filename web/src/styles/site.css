@@ -263,17 +263,16 @@ button {
   inset: 0;
   background:
     radial-gradient(
-      ellipse 52% 68% at 30% 48%,
-      rgba(232, 224, 212, 0.88),
-      transparent 70%
+      ellipse 48% 60% at 32% 48%,
+      rgba(232, 224, 212, 0.72),
+      transparent 68%
     ),
     linear-gradient(
       95deg,
-      rgba(232, 224, 212, 0.94) 0%,
-      rgba(232, 224, 212, 0.78) 34%,
-      rgba(232, 224, 212, 0.28) 58%,
-      rgba(232, 224, 212, 0.08) 72%,
-      transparent 82%
+      rgba(232, 224, 212, 0.86) 0%,
+      rgba(232, 224, 212, 0.55) 34%,
+      rgba(232, 224, 212, 0.18) 58%,
+      transparent 78%
     );
   pointer-events: none;
 }
@@ -312,13 +311,13 @@ button {
   aspect-ratio: 1;
   display: grid;
   place-items: center;
-  background: rgba(232, 224, 212, 0.38);
-  backdrop-filter: blur(14px) saturate(1.08);
-  -webkit-backdrop-filter: blur(14px) saturate(1.08);
-  border: 1px solid rgba(42, 38, 34, 0.42);
+  background: rgba(232, 224, 212, 0.22);
+  backdrop-filter: blur(10px) saturate(1.05);
+  -webkit-backdrop-filter: blur(10px) saturate(1.05);
+  border: 1px solid rgba(42, 38, 34, 0.48);
   box-shadow:
-    0 14px 36px rgba(42, 38, 34, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+    0 12px 28px rgba(42, 38, 34, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.28);
   position: relative;
 }
 

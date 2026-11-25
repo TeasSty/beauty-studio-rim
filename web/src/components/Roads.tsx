@@ -1,4 +1,4 @@
-import { roads } from '../data'
+import { roadStrips, roads } from '../data'
 
 export function Roads() {
   return (
@@ -23,15 +23,11 @@ export function Roads() {
         </div>
 
         <div className="roads__strip" aria-hidden="true">
-          <figure>
-            <img src="/images/strip-01.jpg" alt="" loading="lazy" />
-          </figure>
-          <figure>
-            <img src="/images/strip-02.jpg" alt="" loading="lazy" />
-          </figure>
-          <figure>
-            <img src="/images/strip-03.jpg" alt="" loading="lazy" />
-          </figure>
+          {roadStrips.map((src) => (
+            <figure key={src}>
+              <img src={src} alt="" loading="lazy" />
+            </figure>
+          ))}
         </div>
       </div>
     </section>

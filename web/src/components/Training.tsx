@@ -1,4 +1,4 @@
-import { VK_URL } from '../data'
+import { trainPhoto, VK_URL } from '../data'
 
 export function Training() {
   return (
@@ -27,7 +27,7 @@ export function Training() {
 
         <figure className="training__visual">
           <img
-            src="/images/train.jpg"
+            src={trainPhoto}
             alt="Работа мастера в студии — практика и обучение"
             loading="lazy"
           />

@@ -1,3 +1,5 @@
+import { asset } from './assets'
+
 export const BOOK_URL = 'https://n333022.yclients.ru'
 export const PHONE = '+7 (912) 650-28-12'
 export const PHONE_HREF = 'tel:+79126502812'
@@ -41,12 +43,21 @@ export const works: Array<{
   label: string
   tall?: boolean
 }> = [
-  { src: '/images/work-01.jpg', alt: 'Сложное окрашивание, светлые пряди', label: 'Цвет', tall: true },
-  { src: '/images/work-02.jpg', alt: 'Укладка и форма', label: 'Форма' },
-  { src: '/images/work-03.jpg', alt: 'Блонд с мягким переходом', label: 'Блонд' },
-  { src: '/images/work-04.jpg', alt: 'Тёмный насыщенный тон', label: 'Тон' },
-  { src: '/images/work-05.jpg', alt: 'Объёмная укладка', label: 'Укладка' },
+  { src: asset('images/work-01.jpg'), alt: 'Сложное окрашивание, светлые пряди', label: 'Цвет', tall: true },
+  { src: asset('images/work-02.jpg'), alt: 'Укладка и форма', label: 'Форма' },
+  { src: asset('images/work-03.jpg'), alt: 'Блонд с мягким переходом', label: 'Блонд' },
+  { src: asset('images/work-04.jpg'), alt: 'Тёмный насыщенный тон', label: 'Тон' },
+  { src: asset('images/work-05.jpg'), alt: 'Объёмная укладка', label: 'Укладка' },
 ]
+
+export const roadStrips = [
+  asset('images/strip-01.jpg'),
+  asset('images/strip-02.jpg'),
+  asset('images/strip-03.jpg'),
+] as const
+
+export const heroHair = asset('images/hero-hair.jpg')
+export const trainPhoto = asset('images/train.jpg')
 
 export const services = [
   {
